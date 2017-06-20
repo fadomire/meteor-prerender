@@ -17,6 +17,7 @@ if (token) {
   if (serviceUrl) prerenderio.set('prerenderServiceUrl', serviceUrl);
   prerenderio.set('prerenderToken', token);
   if (protocol) prerenderio.set('protocol', protocol);
+  prerenderio.set('forwardHeaders', true);
 
   prerenderio.set('afterRender', function afterRender(error) {
     if (error) {
